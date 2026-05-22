@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+  font-family: "Cascadia Mono", "Consolas", "Courier New", monospace;
+  background: #0b0f1a;
+  color: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: minmax(320px, 2fr) minmax(260px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.panel {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+h1, h2 {
+  margin: 0 0 12px 0;
+}
+
+.subtle {
+  margin: 0 0 16px 0;
+  color: #9ca3af;
+}
+
+.output {
+  min-height: 360px;
+  max-height: 80vh;
+  min-width: 640px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  background: #0b1220;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #0b1220;
+  color: #f9fafb;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #f9fafb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.help ul {
+  margin: 0;
+  padding-left: 20px;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retro Gamebook</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="panel">
+        <h1>Gamebook</h1>
+        <p class="subtle">Retro text interface. Type commands in the box and press Enter.</p>
+        <pre id="output" class="output"></pre>
+        <div class="input-row">
+          <input id="input" type="text" autocomplete="off" spellcheck="false" />
+          <button id="submit" type="button">Submit</button>
+        </div>
+      </section>
+      <aside class="panel help">
+        <h2>How to Use:</h2>
+        <ul>
+          <li>Navigate the gamebook by selecting numbered options.</li>
+          <li>If you want to create or modify a gamebook, type edit to use editor mode.</li>
+          <li>When you have edited a gamebook, type show to get the nodes you can copy-paste to a savefile</li>
+          <li>If you have copy-pasted into a savefile, type load to copy-paste back into the gamebook system</li>
+        </ul>
+      </aside>
+    </main>
+    <script src="gamebook.js"></script>
+  </body>
+</html>
